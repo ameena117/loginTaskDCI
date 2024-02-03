@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.mainContainer {
+  width: 700px;
+  background-color: rgb(255, 115, 0);
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+.container {
+  width: 250px;
+  padding: 30px 20px;
+  box-shadow: -1px 0px 4px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 5px;
+  background-color: white;
+  position: relative;
+}
+.fa-solid.fa-user {
+  width: 35px;
+  height: 35px;
+  font-size: 35px;
+  color: white;
+  background-color: rgb(255, 230, 0);
+  border-radius: 50%;
+  padding: 10px;
+  position: absolute;
+  top: -25px;
+  left: 115px;
+}
+input {
+  border: 0px;
+  height: 30px;
+  text-align: center;
+  border-radius: 5px;
+}
+input[type="text"],
+input[type="password"] {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+input[type="submit"] {
+  background-color: rgba(0, 0, 255, 0.8);
+  color: white;
+}
+a {
+  color: red;
+  text-decoration: none;
+}
