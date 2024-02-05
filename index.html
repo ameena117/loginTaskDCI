@@ -14,14 +14,16 @@
     />
   </head>
   <body>
-    <div class="mainContainer">
-      <div class="loginContainer">
+    <div class="mainContainer">        
+      <div class="loginContent">
         <i class="fa-solid fa-user"></i>
-        <div class="loginTitle">
+      </div>
+      <div class="loginContainer">
+        <div class="loginContent">
           <h2>Member Login</h2>
         </div>
-        <form action="" class="loginForm">
-          <div class="inputs">
+        <form class="loginForm">
+          <div class="inputContainer">
             <input type="email" name="email" placeholder="E-mail" />
             <input type="password" name="password" placeholder="**********" />
             <div class="showPassword">
@@ -33,10 +35,10 @@
               <label for="checkboxShowPass">Show Password</label>
             </div>
           </div>
-          <div class="errors"></div>
-          <div class="submit"><input type="submit" value="Submit" /></div>
+          <div class="arrayOfErrors"></div>
+          <div class="inputContainer submit"><input type="submit" value="Submit" /></div>
         </form>
-        <div class="forgotPassword"><a href="#">Forgot Password?</a></div>
+        <div class="loginContent forgotPassword"><a href="#">Forgot Password?</a></div>
       </div>
     </div>
     <script src="errors.js"></script>

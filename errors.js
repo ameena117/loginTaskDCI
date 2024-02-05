@@ -1,5 +1,5 @@
 const loginForm = document.querySelector(".loginForm");
-let alert = document.querySelector(".errors");
+let alert = document.querySelector(".arrayOfErrors");
 let email = loginForm.email;
 let password = loginForm.password;
 let showPassword = loginForm.checkboxShowPass;
@@ -16,19 +16,19 @@ loginForm.onsubmit = function check(e) {
   console.log(email, password);
   console.log(email.value, password.value);
   if (email.value == "" && password.value == "") {
-    alert.innerHTML = errors[2];
+    alert.innerHTML = "E-mail and Password are required";
     alert.style.color = "red"
   }
   else if (email.value == "") {
-    alert.innerHTML = errors[0];
+    alert.innerHTML = "E-mail is required";
     alert.style.color = "red"
   }
   else if (password.value == "") {
-    alert.innerHTML = errors[1];
+    alert.innerHTML ="Password is required";
     alert.style.color = "red"
   }
   else {
-    alert.innerHTML = errors[3];
+    alert.innerHTML = "Success";
     alert.style.color = "green"
   }
 };
