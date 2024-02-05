@@ -17,19 +17,19 @@ loginForm.onsubmit = function check(e) {
   console.log(email.value, password.value);
   if (email.value == "" && password.value == "") {
     alert.innerHTML = errors[2];
-    alert.style.backgroundColor = "red"
+    alert.style.color = "red"
   }
   else if (email.value == "") {
     alert.innerHTML = errors[0];
-    alert.style.backgroundColor = "red"
+    alert.style.color = "red"
   }
   else if (password.value == "") {
     alert.innerHTML = errors[1];
-    alert.style.backgroundColor = "red"
+    alert.style.color = "red"
   }
   else {
     alert.innerHTML = errors[3];
-    alert.style.backgroundColor = "green"
+    alert.style.color = "green"
   }
 };
 
